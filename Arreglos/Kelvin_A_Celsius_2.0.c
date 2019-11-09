@@ -8,6 +8,7 @@ int main(void)
     float celsius[46];
     float farenheit[46];
     float kelvin[46];
+    int seleccion;
 
     for(i = 0; i < 46; i++)
     {
@@ -18,6 +19,9 @@ int main(void)
     }
 
 /* Ejercicio scanf*/  
+    printf("Ingrese numero de lista: ");
+    scanf("%d",&seleccion);
+    printf("%d\n",seleccion);
     return 0;
 }
 /*
