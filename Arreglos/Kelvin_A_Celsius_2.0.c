@@ -15,7 +15,9 @@ int main(void)
         farenheit[i] = (celsius[i] * 9 / 5) + 32;
         kelvin[i] = celsius[i] + 273.15;
         printf ("%.2f Grados Celsius es igual a %.2f Grados Farenheit\n %.2f Grados Farenheit es igual a %.2f Grados Kelvin\n\n", celsius[i], farenheit[i], farenheit[i], kelvin[i]);
-    }       
+    }
+
+/* Ejercicio scanf*/  
     return 0;
 }
 /*
