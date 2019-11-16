@@ -26,6 +26,6 @@ int main(void)
     printf("Para observar demostracion de funciones\n");
     printf("Para detener la ejecucion del programa presione Ctrl+c\n");
     while((caracter = getchar()) != EOF)
-        putchar(caracter);
+        putchar(caracter)
     return 0;
 }
