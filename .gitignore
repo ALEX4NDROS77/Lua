@@ -1,10 +1,2 @@
-.vscode/c_cpp_properties.json
-.vscode/tasks.json
-.vscode/settings.json
-Arreglos/Kelvin_A_Celsius_2.0.exe
-Arreglos/.vscode/c_cpp_properties.json
-Arreglos/.vscode/tasks.json
-Cadenas/cuenta_caracteres.exe
-Cadenas/entrada_salida_caracteres.exe
-Cadenas/.vscode/c_cpp_properties.json
-Cadenas/.vscode/tasks.json
+**/.vscode/*
+**/*.exe
