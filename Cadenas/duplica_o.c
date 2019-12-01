@@ -13,7 +13,7 @@ int main(void)
         {
            if (caracter == '\n')
            {
-             printf("%d");
+             printf("%d\n", cantidad);
            }
            
         }
