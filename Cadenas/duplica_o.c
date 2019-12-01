@@ -3,7 +3,7 @@ int main(void)
 {
     char caracter;
     int cantidad = 0;
-    while((caracter = getchar()) != EOF)
+    while((caracter = getchar()) != EOF);
     {
         if(caracter == 'o')
         {
@@ -13,7 +13,7 @@ int main(void)
         {
            if (caracter == '\n')
            {
-             printf("%d")
+             printf("%d");
            }
            
         }
