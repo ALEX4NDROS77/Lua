@@ -4,22 +4,23 @@ int main(void)
 {
     char caracter;
     int cantidad = 0;
-    while((caracter = getchar()) != EOF);
+    #define O 'o','O'
+    #define NuevaLinea '\n'
+
+    while((caracter = getchar()) != EOF)
     {
-        if(caracter == 'o')
+
+        if(caracter == O)
         {
             cantidad++;
         }
-        else
+        if(caracter == NuevaLinea)
         {
-           if (caracter == '\n')
-           {
-             printf("%d\n", cantidad);
-           }
-           
+            //Trabajando para convertir el numero de 'o' contadas en 'o' replicadas.
+            printf("%d",caracter);
         }
         
-       
+
     }
     
     
