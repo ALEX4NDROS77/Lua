@@ -1,11 +1,13 @@
 #include <stdio.h>
 // BAJJ --> Las constantes simbolicas se declaran despues
 // de incluir las cabeceras
-    char caracter;
-    int cantidad = 0;
     #define ESPACIO ' '
     #define NUEVA_LINEA '\n'
 
+    // Estas variables deberian estar declaradas dentro del bloque Main, no fuera de el.
+    // Esto que acabas de realizar se trata de variables globales al programa, trataremos el tema mas tarde
+    char caracter;
+    int cantidad = 0;
 int main(void)
 {
 
@@ -22,13 +24,18 @@ int main(void)
             printf("%d\n",cantidad);
             cantidad = 0;
         }
-        // BAJJ --> La variable caracter solo almacena un caracter a la vez, tu tratas de compararlo con multiples caracteres.
-        // La solucion seria comparar caracter por caracter la entrada hasta completar la palabra.
+        // BAJJ --> La aproximacion al problema es mas cercana a la respuesta correcta, sin embargo
+        // esta implementacion rompe el flujo del programa debido a que su condicion principal realiza getchar
+        // por cada nuevo caracter que encuentra 
         if(caracter == 'e')
         {
+            // BAJJ --> aunque estas cerca tendras que pensar en una mejor manera de resolver el problema.
+            // esfuerzate ;)
             caracter = getchar();
             if(caracter =='x')
             {
+                // BAJJ --> Por ultimo, haz favor de probar tus modificaciones posterior a que las hagas, este programa no funciona
+                // en su estado actual
                 caracter = getchar();
                 if(caracter =='i')
                 {
