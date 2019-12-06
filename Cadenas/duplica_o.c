@@ -1,5 +1,4 @@
 // BAJJ --> En espera de la elminiacion del tag incompleto, para envio de comentarios
-//incompleto
 #include <stdio.h>
 int main(void)
 {
