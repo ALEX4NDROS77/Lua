@@ -6,7 +6,11 @@ int main(void)
 {
     char caracter;
     int cantidad = 0;
-
+    int flagE[1];
+    int flagX[1];
+    int flagI[1];
+    int flagT[1];
+    
     while((caracter = getchar()) != EOF)
     {
         if (caracter == ESPACIO)
@@ -20,25 +24,33 @@ int main(void)
             printf("%d\n",cantidad);
             cantidad = 0;
         }
-        // BAJJ --> La aproximacion al problema es mas cercana a la respuesta correcta, sin embargo
-        // esta implementacion rompe el flujo del programa debido a que su condicion principal realiza getchar
-        // por cada nuevo caracter que encuentra 
-        if(caracter == 'e')
+
+        if(caracter == 'e' )
         {
-            caracter = getchar();
-            if(caracter =='x')
-            {
-                caracter = getchar();
-                if(caracter =='i')
-                {
-                    caracter = getchar();
-                    if(caracter =='t')
-                    {
-                        break;
-                    }
-                }            
-            }
+            flagE[1] = 1;
         }
+        else
+            flagE[1] = 0;
+        
+        if(caracter == 'x' && flagE[1] == 1)
+            flagX[1] = 1;
+        else
+        {
+            flagE[1] = 0;
+            flagX[1] = 0;
+        }
+
+        if(caracter == 'i' && flagX[1] == 1)
+            flagI[1] = 1;
+        else
+        {
+            flagE[1] = 0;
+            flagX[1] = 0;
+            flagI[1] = 0;
+        }
+
+        if(caracter == 't' && flagI[1] == 1)
+           break;
 
     }
     
