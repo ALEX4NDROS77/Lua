@@ -25,6 +25,7 @@ int main(void)
             cantidad = 0;
         }
 
+        // BAJJ -> La implementacion de esta caracteristica sigue pendiente.
         if(caracter == 'e' )
         {
             flagE[1] = 1;
